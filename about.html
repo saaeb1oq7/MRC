@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>MRC</title>
+</head>
+<body>
+    <section id="header">
+        <a href="">MRC</a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fa-solid fa-outdent"></i>
+        </div>
+    </section>
+    <section id="page-header" class="about-header">
+        <h2>#About us</h2>
+        <p>Learn more about MRC</p>
+    </section>
+    <section id="about-head" class="section-p1">
+        <img src="img/banner/a6.jpg" alt="">
+        <div>
+            <h2>Who are we?</h2>
+            <p>We are a real estate shopping platform dedicated to providing our customers with the best products available</p>
+
+            <p> Our mission is to revolutionize the online shopping experience by offering a wide range of high-quality products at competitive prices, along with exceptional customer service.</p>
+            
+            <abbr title=""></abbr>
+            <p>We believe that shopping should be easy, convenient, and enjoyable, and we strive to make that a reality for our customers.</p>
+            <br><br>
+
+            <marquee bgcolor="#ccc" loop="1" scrollamount="10" dir="ltr" >
+                join us on our journey to revolutionize the online shopping experience. We are committed to providing our customers with the best products and services available, and we look forward to serving you in the future.
+            </marquee>
+        </div>
+    </section>
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="img/features/f1.png" alt="">
+            <h6>Awsome products</h6>
+
+        </div>
+
+        <div class="fe-box">
+            <img src="img/features/f3.png" alt="">
+            <h6>Best prices</h6>
+
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f6.png" alt="">
+            <h6>Customer support 24/7</h6>
+
+        </div>
+        
+    </section>
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+    </script>
+    <script src="script.js"></script>
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact us</h4>
+            <p><strong>Phone number : </strong>+964 771 750 0010</p>
+            <p><strong>Email : </strong>yassertalib@yahoo.com</p>
+            <p>Time available : <strong>All days a weak</strong></p>   
+        </div>
+        <div class="follow">
+            <h4>Follow us</h4>
+            MRC - Baghdad
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>All copy writes are saved for Saaeb © 2025</p>
+            <p>Phone : 964+ 7700373270</p>
+            <p>Email : saaebkirkuk@gmail.com</p>
+            <p>Socials : Discord saaeb</p>
+        </div>
+    </footer>
+</body>
+</html>
