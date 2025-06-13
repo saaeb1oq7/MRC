@@ -62,13 +62,14 @@
         <input type="email" name="email" id="email" placeholder="Email" required>
         <input type="text" name="subject" placeholder="Subject">
         <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-        <button type="submit" class="normal">Send</button>
+        <button type="submit" class="normal" id="btn">Send</button>
         <p>Your message helps a lot we will reply in earliest time possible</p>
     </form>
     </section>
     <script>
         var MainImg = document.getElementById("MainImg");
         var smallimg = document.getElementsByClassName("small-img");
+        var btn = document.getElementsById("btn");
         smallimg[0].onclick = function(){
             MainImg.src = smallimg[0].src;
         }
@@ -77,6 +78,9 @@
         }
         smallimg[2].onclick = function(){
             MainImg.src = smallimg[2].src;
+        }
+        btn.onclick = function(){
+            window.location.href = "https://mrcestates.netlify.app/contact"
         }
     </script>
     <script src="script.js"></script>
